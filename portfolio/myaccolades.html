@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY ACCOLADES </title>
+    <link rel="stylesheet" type="text/css" href="style/acc.css">
+</head>
+<body>
+   <div class="back">
+  <a class="a active" href="index.html">BACK</a>
+</div>
+<img src="rahul2.jpeg">
+<div class="background">
+<div class="accolades">
+    	<p> In my schoolings I participated in many volleyball matches and won many trophies in<br>
+    	 STATE LEVEL matches. <br>
+    		I also participated in a cluster match but didnt make into the finals.<br>
+    	I won gold medal in inter iiit volleyball match as a freshmen in college. <br>
+          Apart from sports I have the same interest in my academics also. I was the only one in my school to get a seat in a central government college.<br> In my school I didnt have separate coaching for jee preparation and other things. It wa all my own interest and my own work to try for it. I worked hard to get to this college and after comming to college , I came to know that life doesnt end with the college we join. Life has no end point in terms of learning. You can learn from anything and everything.... 
+    </p>
+    </div>
+</div>
+<script type="text/javascript" src="js\jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+      $('a').click(function(){
+        var selected = $(this);
+        $('a').removeClass('active');
+        $(selected).addClass('active');
+      });
+
+          var $a = $('.a'),
+          $back = $('.back');
+
+        
+             
+      });
+
+    
+</script>
+</body>
+</html>

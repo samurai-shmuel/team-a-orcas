@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Tangerine', sans-serif;
+	background: #333;
+	color: #fff;
+	line-height: 1.6;
+	background: url(../images/backg.PNG);
+}
+
+.home a {
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	font-size: 1.5rem;
+	margin: 20px;
+	display: flex;
+	z-index: 7;
+	bottom: 6px;
+	cursor: pointer;
+	right: 0;
+	color: azure;
+	text-decoration: none;
+	font-family: 'Truculenta', serif;
+	font-weight: 700;
+	border-radius: 10px;
+	justify-content: center;
+	border: 2px solid;
+	background-color: mediumspringgreen;
+	padding: 1px 3px;
+}
+
+h1 {
+	position: absolute;
+	font-size: 3.5rem;
+	margin: 30px 30px;
+}
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}
+
+.slide {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+}
+
+	.slide.current {
+		opacity: 1;
+	}
+
+	.slide:first-child {
+		background: url('https://ik.imagekit.io/sflegly6let/Slide1_2znahUQQr.PNG') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(120%);
+	}
+
+	.slide:nth-child(2) {
+		background: url('https://ik.imagekit.io/sflegly6let/Slideb_Wca4KG6dZjPx.PNG') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(110%);
+	}
+
+	.slide:nth-child(3) {
+		background: url('https://ik.imagekit.io/sflegly6let/Slide3_RSfn6wPGPR2.PNG') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(90%);
+	}
+
+	.slide:nth-child(4) {
+		background: url('https://ik.imagekit.io/sflegly6let/Slide4_tMbzbjmIP.PNG') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(110%);
+	}
+
+	.slide:nth-child(5) {
+		background: url('https://ik.imagekit.io/sflegly6let/Slide5_sE7CGuGs_Km.PNG') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(110%);
+	}
+
+	.slide:nth-child(6) {
+		background: url('https://ik.imagekit.io/sflegly6let/Slide6_YzhMUzJAN.PNG') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(110%);
+	}
+
+	.slide:nth-child(7) {
+		background: url('https://ik.imagekit.io/sflegly6let/Slide7_-mrdjHYbXOh.PNG') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(110%);
+	}
+
+	.slide:nth-child(8) {
+		background: url('https://ik.imagekit.io/sflegly6let/Slidea_dDJkT0fJq6.PNG') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(90%);
+	}
+
+	.slide:nth-child(9) {
+		background: url('../images/oac.jpeg') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(110%);
+	}
+
+	.slide:nth-child(10) {
+		background: url('https://ik.imagekit.io/sflegly6let/catia_MC-Kh50QqA.png') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(90%);
+	}
+
+	.slide:nth-child(11) {
+		background: url('https://ik.imagekit.io/sflegly6let/MOre_-IJcdAaRKiQ.PNG') center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter: brightness(110%);
+	}
+
+.buttons button#prev {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+}
+
+.buttons button#next {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+}
+
+.buttons button {
+	border: 2px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	cursor: pointer;
+	padding: 13px 15px;
+	border-radius: 50%;
+	outline: none;
+}
+
+	.buttons button:hover {
+		background-color: #fff;
+		color: black;
+	}
+
+
+.Behance {
+	position: fixed;
+	font-size: 1.7em;
+	bottom: 90px;
+	right: 20px;
+	text-decoration: none;
+	color: lavender;
+	display: inline;
+	z-index: 10;
+}
+
+.Behance-c img {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 90px;
+	right: 190px;
+	z-index:10;
+}

@@ -1,0 +1,342 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+/*    font-family: 'Satisfy', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fondamento', serif;
+}
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    transition: all 1000ms;
+}
+
+.showcase.active{
+    right: 300px;
+}
+
+h3 {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    color: #ffccff;
+    font-family: 'Satisfy', cursive;
+    top: 0;
+}
+
+span {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: aquamarine;
+    padding: 10px 100px;
+    word-spacing: 6px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    transition: 0.5s;
+    animation: linear;
+    transition-property: left;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 0.7;
+}
+
+/*<h3> DBMS Project Phase 1 </h3>*/
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: block;
+    margin-right:auto;
+    align-items: center;
+    justify-items: center;
+    background-color: #375178;
+    transition: 0.5s;
+    transition-property: right;
+}
+
+.menu p{
+    position: absolute;
+    top: 300px;
+    margin: 30px;
+    font-family: 'Bree Serif';
+    color: azure;
+}
+
+.menu img{
+    position: absolute;
+    top: 160px;
+    right: 105px;
+    width: 130px;
+    height: 130px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkslateblue;
+    mix-blend-mode: overlay;
+}
+
+.lobby {
+    position: absolute;
+    bottom: 0px;
+    min-width: 1519px;
+    display: flex;
+    z-index: 6;
+}
+
+.text {
+    position: absolute;
+    left: 0;
+    padding-left: 20px;
+    z-index: 10;
+    background-color: #29293d;
+    border-top: solid;
+    border-top-color: #3d0099;
+    border-top-width: 0.5em;
+}
+
+.overlap h2 {
+    position: absolute;
+    z-index: 15;
+    margin-left: 40px;
+    bottom: -45px;
+    font-size: 3.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.01px #75a3a3;
+    color: #5c5c8a;
+    text-shadow: 4px 4px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-family: 'Trade Winds', serif;
+}
+
+.text p {
+    font-size: 1.3em;
+    margin: 17px;
+    font-weight: 400;
+    max-width: 7000px;
+    word-spacing: 1.75px;
+    color: #ccff33;
+}
+
+.dashboard {
+    margin-top: 10px;
+    margin-left: 550px;
+    align-self: center;
+    padding: 5px;
+    z-index:9;
+}
+
+.logo {
+    position: relative;
+    margin: 100px;
+    height: 200px;
+    width: 200px;
+    z-index: 15;
+    filter: brightness(150%);
+    transition: .5s;
+    transform: rotate(-10deg);
+    border-radius: 50%;
+    filter: blur(2px);
+}
+
+.logo:hover {
+    transform: rotate(20deg);
+    filter: blur(0) brightness(110%);
+    border: initial;
+    border-color: aqua;
+}
+
+ul {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 300px;
+}
+
+    ul li {
+        list-style: none;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        background: darkslategray;
+        transform: rotate(45deg);
+        transition: 0.5s;
+        z-index: 0;
+        margin: -100px;
+        overflow: hidden;
+        opacity: 0.9;
+    }
+
+    ul li:hover {
+        opacity: 1;
+        filter: brightness(120%);
+    }
+
+        ul li.member1 {
+            top: 50%;
+            left: 25%;
+        }
+
+        ul li.member2 {
+            bottom: 50%;
+            left: 75%;
+        }
+
+        ul li.member3 {
+            top: 0;
+            left: 50%;
+        }
+
+        ul li.member4 {
+            bottom: 0;
+            left: 50%;
+        }
+
+        ul li .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            object-fit: fill;
+            transform: rotate(-45deg) scale(1.42);
+        }
+
+        ul li.member1 .img {
+            background: url(../images/ASF.jpeg);
+            background-size: cover;
+            transform: scaleX(-1) rotate(45deg) scale(1.42);
+        }
+
+        ul li.member2 .img {
+            background: url(../images/dp1.jpg);
+            background-size: cover;
+        }
+
+        ul li.member3 .img {
+            background: url(../images/Rahul.jpeg);
+            background-size: cover;
+        }
+
+        ul li.member4 .img {
+            background: url(../images/Puranan.jpeg);
+            background-size: cover;
+        }
+
+.dashboard h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dashboard a {
+    display: inline-block;
+    font-size: 1.2em;
+    color: aqua;
+    opacity: 0.6;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: 1px;
+    transition: 0.2s;
+    letter-spacing: 1px;
+    transition: all 400ms
+}
+
+.dashboard a:hover{
+    letter-spacing: 2px;
+    opacity: 1;
+}
+
+.menu i{
+    padding: 10px;
+}
+
+label #side-bar_btn {
+    z-index: 21;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    right: 125px;
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    transition-property: color;
+    border-radius: 50%;
+    background-color: cyan;
+}
+
+    label #side-bar_btn img {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        top: -10px;
+        right: 10px;
+    }
+
+#check:checked ~ .showcase{
+    margin-right: 300px;
+}
+
+#check:checked ~ .showcase header{
+    margin-top: 10px;
+    margin-left: 1050px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+

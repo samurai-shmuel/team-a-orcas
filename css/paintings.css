@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tangerine', sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    background: url(../images/backg.PNG);
+}
+
+.home a{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin: 20px;
+    display: flex;
+    z-index: 7;
+    bottom: 6px;
+    cursor: pointer;
+    right: 0;
+    color: azure;
+    text-decoration: none;
+    font-family: 'Truculenta', serif;
+    font-weight: 700;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid;
+    background-color: mediumspringgreen;
+    padding: 1px 3px;
+}
+
+h1 {
+    position: absolute;
+    font-size: 3.5rem;
+    margin: 30px 30px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+    .slide.current {
+        opacity: 1;
+    }
+
+    .slide:first-child {
+        background: url('https://ik.imagekit.io/sflegly6let/Slide1_e0WNC8IFK.PNG') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(120%);
+    }
+
+    .slide:nth-child(2) {
+        background: url('https://ik.imagekit.io/sflegly6let/Slide2_ugpNFWeKu.PNG') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(110%);
+    }
+
+    .slide:nth-child(3) {
+        background: url('https://ik.imagekit.io/sflegly6let/Slide4_qM-jeSDz4Q.PNG') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(90%);
+    }
+
+    .slide:nth-child(4) {
+        background: url('https://ik.imagekit.io/sflegly6let/Slide5_1XrMR9znBSE.PNG') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(110%);
+    }
+
+    .slide:nth-child(5) {
+        background: url('https://ik.imagekit.io/sflegly6let/Slide6_djnUloHmF.PNG') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(110%);
+    }
+
+    .slide:nth-child(6) {
+        background: url('https://ik.imagekit.io/sflegly6let/Slide7_dj8ofKKx8db.PNG') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(110%);
+    }
+
+    .slide:nth-child(7) {
+        background: url('https://ik.imagekit.io/sflegly6let/Slide8_LR4kOMpADk.PNG') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(110%);
+    }
+
+    .slide:nth-child(8) {
+        background: url('https://ik.imagekit.io/sflegly6let/Slide9_ixrDZso5Ota.PNG') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(90%);
+    }
+
+    .slide:nth-child(9) {
+        background: url('https://ik.imagekit.io/sflegly6let/Slide10_kMiaqZtBn.PNG') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(90%);
+    }
+
+    .slide:nth-child(10) {
+        background: url('../images/lion edit.jpg') center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(90%);
+    }
+
+
+.buttons button#prev{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.buttons button#next{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+.buttons button{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+

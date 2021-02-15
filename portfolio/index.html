@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SRI RAHUL </title>
+    <link rel="stylesheet" type="text/css" href="style/cssfile.css">
+</head>
+<body>
+   
+<div class="background">
+
+<div class="nav">
+	<a class="a active" href="#">HOME</a>
+	<a class="b" href="#">ABOUT</a>
+	<a class="c" href="myaccolades.html">ACCOLADES</a>
+	<a class="d" href="../index.html">BACK</a>
+	
+
+</div>
+
+<div class="content">
+	<div class="home">
+	     <h1>Sri Rahul</h1>
+	     <h3>MSM19B041</h3>
+	</div>
+</div>	
+
+    <div class="about">
+    	<p>Hello folks,<br>
+    	This is my first portfolio webpage.<br>More than saying about my achievement, let me share about myself!!<br>
+    	I really love sports and more particularly volleyball is my sport.<br>Moreover I love listening to music. Right now I am studying Btech smart manufacturing in IIITDM Kancheepuram. <br>In my future I have a plan of studying MBA, where I could come to know about the bussiness administration in an elaborae way.. <br /><br />
+        Contact me at my email id: msm19b041@iiitdm.ac.in</p>
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="js\jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+    	$('a').click(function(){
+    		var selected = $(this);
+    		$('a').removeClass('active');
+    		$(selected).addClass('active');
+    	});
+
+          var $a = $('.a'),
+          $b = $('.b'),
+          $c = $('.c'),
+          $d = $('.d'),
+          $home = $('.home'),
+          $about = $('.about'),
+          $accolades = $('.accolades'),
+          $back = $('.back');
+
+          $a.click(function(){
+          	   $home.fadeIn();
+          	   $about.fadeOut();
+          	   $accolades.fadeOut();
+          	   $back.fadeOut();
+            });
+          $b.click(function(){
+          	   $about.fadeIn();
+          	   $home.fadeOut();
+          	   $accolades.fadeOut();
+          	   $back.fadeOut();
+           });
+          
+          $c.click(function(){
+          	   $accolades.fadeIn();
+          	   $home.fadeOut();
+          	   $about.fadeOut();
+          	   $back.fadeOut();
+            });	   
+          $d.click(function(){
+          	   $back.fadeIn();
+          	   $home.fadeOut();
+          	   $about.fadeOut();
+          	   $accolades.fadeOut();
+          });
+
+      });
+</script>
+</body>
+</html>
