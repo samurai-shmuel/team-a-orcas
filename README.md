@@ -4,4 +4,4 @@ NOTE: the website is hosted from a different github account created for the team
 <br>
 https://team-a-orcas.github.io/index.html
 
-This is the result of collaboration by 4 team members of whom I was one. The website speaks for itself.
+This is the result of collaboration by 4 team members of whom I was one. The website speaks for itself. I designed the landing and my own resume, while my team members designed their own resume pages
